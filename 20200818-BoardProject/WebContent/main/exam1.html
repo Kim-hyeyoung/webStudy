@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+<!-- CSS / JavaScript -->
+</head>
+<body>
+	<!-- 화면출력 => HTML : <> 태그 + 속성
+					<a href="">
+					== =======
+					태그	속성 ==========> 사용자 정의가 없다 (지정된 태그만 사용)
+			<문자>
+				<h1>~<h6> : 제목
+				<strong><em><b> : 강조
+				<font> : 글꼴, 색상변경
+				<p> : 단락
+				<br> : 다음줄 출력
+				<hr> : 수평선
+				<pre> : 있는 그대로 출력
+				<sup> : 위첨자
+			<목록>
+				<ul> : 순서가 없는 경우
+				<ol> : 순서가 존재
+				<dl> : 데이터 목록 
+				<dt> : 데이터 제목
+				<dd> : 데이터 설명
+				<table><tr> : 한 줄을 만드는 경우
+				<th> : 테이블 제목
+				<td> : 데이터 첨부
+			<입력>
+				<input type="">
+					type  
+						= text : 한줄 문자열)
+						= file : 파일 업로드)
+						= password : 비밀번호)
+						= hidden : 사용자는 볼 수 없지만 데이터 존재)
+						= image : button(submit) => 데이터 전송버튼
+						= date : 달력
+						= submit
+						= button
+				<select> : 콤보박스
+				<textarea> : 여러줄 문자열 입력
+			<이동>
+				<a href="이동할 파일명"> : 일반 이동
+				<form action="이동할 파일명"> : 데이터 전송과 동시 이동
+			<기타>
+				<img> : 이미지 출력
+				<img src="파일 경로명">
+				<div> : 화면 분할, 카드.. (table=> div) => CSS
+				<span> : 특정부분만 변경 => CSS
+			
+	-->
+	<a href="http://www.daum.net" target="_blank">다음</a>
+	<br>
+	<img src="image/movie.jpeg" width=350 height=450 title="제목"><br>
+	<!-- 이미지 경로 => ./image/movie.jpeg 는 현재 폴더(main안에 image 폴더)
+					image/movie.jpeg도 현재 폴더(위와 동일)
+					../image/movie.jpeg 는 상위 폴더(main밖에 image 폴더)    	-->
+	<input type="text" size=15><br>
+	<input type="password" size=15><br>
+	<input type="hidden" size=15><br>
+	<input type="file" size=15><br>
+	<input type="date" size=15><br>
+	<input type="image" src="image/movie.jpeg" width=100 height=30><br>
+	<input type="submit" value="전송"><br>
+	<input type="button" value="확인"><br>
+	<select>
+		<option>이름</option>
+		<option>제목</option>
+		<option>내용</option>
+	</select><br>
+	<textarea rows="10" cols="50"></textarea><br>
+	성별:<input type=radio name=sex>남자<input type=radio name=sex>여자<br>
+	취미:<input type="checkbox">등산<input type="checkbox">개발
+	<input type="checkbox">공부<input type="checkbox">낚시
+	<input type="checkbox">운동
+
+</body>
+</html>
